@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Formatter;
 import java.util.List;
 
 @WebServlet("/register")
@@ -17,7 +18,6 @@ public class FormServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
 
-        //this is test branchs!
         try (PrintWriter out = resp.getWriter()) {
             String username = req.getParameter("username");
             String password = req.getParameter("password");
@@ -55,7 +55,13 @@ public class FormServlet extends HttpServlet {
                 errores.add("selecciona un idioma");
             }
 
-            out.print(String.format("""
+            StringBuilder Sbuilder = new StringBuilder();
+            Formatter htmlString = new Formatter(Sbuilder);
+
+            htmlString.format("""
+                    """);
+
+        out.print(String.format("""
                     <!Doctype html>
                     <html>
                         <head>
