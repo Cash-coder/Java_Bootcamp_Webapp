@@ -1,0 +1,44 @@
+03-Mar-2023 21:14:56.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.5
+03-Mar-2023 21:14:56.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 19:52:50 UTC
+03-Mar-2023 21:14:56.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.5.0
+03-Mar-2023 21:14:56.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+03-Mar-2023 21:14:56.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Mar-2023 21:14:56.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Mar-2023 21:14:56.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+03-Mar-2023 21:14:56.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.1+10-21
+03-Mar-2023 21:14:56.197 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Mar-2023 21:14:56.197 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5
+03-Mar-2023 21:14:56.197 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5
+03-Mar-2023 21:14:56.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\conf\logging.properties
+03-Mar-2023 21:14:56.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Mar-2023 21:14:56.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Mar-2023 21:14:56.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_socket,address=localhost:8000,server=y,suspend=n
+03-Mar-2023 21:14:56.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5
+03-Mar-2023 21:14:56.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5
+03-Mar-2023 21:14:56.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\temp
+03-Mar-2023 21:14:56.222 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.2] using APR version [1.7.0].
+03-Mar-2023 21:14:56.242 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.7 1 Nov 2022]
+03-Mar-2023 21:14:56.729 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+03-Mar-2023 21:14:56.765 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [867] milliseconds
+03-Mar-2023 21:14:56.840 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+03-Mar-2023 21:14:56.840 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.5]
+03-Mar-2023 21:14:56.856 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\docs]
+03-Mar-2023 21:14:57.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\docs] has finished in [600] ms
+03-Mar-2023 21:14:57.457 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\examples]
+03-Mar-2023 21:14:58.138 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\examples] has finished in [681] ms
+03-Mar-2023 21:14:58.138 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\host-manager]
+03-Mar-2023 21:14:58.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\host-manager] has finished in [83] ms
+03-Mar-2023 21:14:58.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\manager]
+03-Mar-2023 21:14:58.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\manager] has finished in [79] ms
+03-Mar-2023 21:14:58.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\ROOT]
+03-Mar-2023 21:14:58.343 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\ROOT] has finished in [42] ms
+03-Mar-2023 21:14:58.348 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Mar-2023 21:14:58.445 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1678] milliseconds
+03-Mar-2023 21:15:32.525 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\webapp.war]
+03-Mar-2023 21:15:32.651 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\HP EliteBook\IdeaProjects\webapp\apache-tomcat-10.1.5\webapps\webapp.war] has finished in [127] ms

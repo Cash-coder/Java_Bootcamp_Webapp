@@ -1,0 +1,5 @@
+127.0.0.1 - admin [03/Mar/2023:21:15:32 +0100] "PUT /manager/text/deploy?path=%2Fwebapp&update=true HTTP/1.1" 200 64
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:21:15:48 +0100] "GET /webapp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:21:15:48 +0100] "GET /webapp/ HTTP/1.1" 200 2835
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:21:15:48 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:21:58:40 +0100] "POST /webapp/register HTTP/1.1" 200 532
