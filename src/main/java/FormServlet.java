@@ -26,7 +26,9 @@ public class FormServlet extends HttpServlet {
             String[] lenguajes = req.getParameterValues("lenguajes");
             String[] roles = req.getParameterValues("roles");
             String idioma = req.getParameter("idioma");
-            String habilitar = req.getParameter("habilitar");
+            //declaración y validación de variable
+            boolean habilitar = req.getParameter("habilitar") != null &&
+                    req.getParameter("habilitar").equals("on");
             String secreto = req.getParameter("secreto");
 
             List<String> errores = new ArrayList<>();
@@ -76,14 +78,15 @@ public class FormServlet extends HttpServlet {
                             <!-- IN THIS UL INSERT ERRORS LIST IF ANY-->
                     """);
 
+            //JSP diff approach, show it side by side in the form field
             //insert errors if any
-            if (!errores.isEmpty()) {
-                errores.forEach(error -> {
-                    htmlString.format("<li>" + error + "</li>");
-                });
-            }
+//            if (!errores.isEmpty()) {
+//                errores.forEach(error -> {
+//                    htmlString.format("<li>" + error + "</li>");
+//                });
+//            }
 
-            //continue building String
+            //continue building String in open <ul>
             htmlString.format("""
                             <li> username: %s </li>
                             <li> password: %s </li>
@@ -95,6 +98,7 @@ public class FormServlet extends HttpServlet {
                             <li> habilitar: %s </li>
                             <li> secreto: %s </li>
                         </ul>
+                    <p> <a href="/webapp"/index.html> Volver al formulario </p>
                     </body>
                     </html>
                     """, username, password, email, pais, Arrays.toString(lenguajes),
