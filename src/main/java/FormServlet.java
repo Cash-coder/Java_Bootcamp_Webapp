@@ -58,35 +58,51 @@ public class FormServlet extends HttpServlet {
             StringBuilder Sbuilder = new StringBuilder();
             Formatter htmlString = new Formatter(Sbuilder);
 
+            //build string beguinning
+            //if errors to add, add
+            //build end string
+
             htmlString.format("""
+                <!Doctype html>
+                <html>
+                    <head>
+                    <meta charset="UTF-8">
+                    <title> Form Result ! </title>
+                    </head>
+                    
+                    <body>
+                        <h1> Resultado form!</h1>
+                        <ul>
+                            <!-- IN THIS UL INSERT ERRORS LIST IF ANY-->
                     """);
 
-        out.print(String.format("""
-                    <!Doctype html>
-                    <html>
-                        <head>
-                        <meta charset="UTF-8">
-                        <title> Form Result ! </title>
-                        </head>
-                        
-                        <body>
-                            <h1> Resultado form!</h1>
-                            <ul>
-                                <li> username: %s </li>
-                                <li> password: %s </li>
-                                <li> email: %s </li>
-                                <li> País: %s </li>
-                                <li> lenguajes: %s </li>
-                                <li> roles: %s </li>
-                                <li> idioma: %s </li>
-                                <li> habilitar: %s </li>
-                                <li> secreto: %s </li>
-                                
-                            </ul>
-                        </body>
-                        </html>
+            //insert errors if any
+            if (!errores.isEmpty()) {
+                errores.forEach(error -> {
+                    htmlString.format("<li>" + error + "</li>");
+                });
+            }
+
+            //continue building String
+            htmlString.format("""
+                            <li> username: %s </li>
+                            <li> password: %s </li>
+                            <li> email: %s </li>
+                            <li> País: %s </li>
+                            <li> lenguajes: %s </li>
+                            <li> roles: %s </li>
+                            <li> idioma: %s </li>
+                            <li> habilitar: %s </li>
+                            <li> secreto: %s </li>
+                        </ul>
+                    </body>
+                    </html>
                     """, username, password, email, pais, Arrays.toString(lenguajes),
-                    Arrays.toString(roles), idioma, habilitar, secreto));
+                    Arrays.toString(roles), idioma, habilitar, secreto);
+
+            //print html string to show it on sccreen
+            out.print(htmlString);
+
         }
     }
 }
